@@ -2,11 +2,16 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I63W4OK)
 
-## [Demo](https://angular-material-admin.firebaseapp.com)
+This is a fork of [changhuixu/angular-material-admin](https://github.com/changhuixu/angular-material-admin) to demonstrate how to set up Authenticator with custom route guards. 
 
-[![Build Status](https://img.shields.io/travis/changhuixu/angular-material-admin/master.svg?label=Travis%20CI&style=flat-square)](https://app.travis-ci.com/changhuixu/angular-material-admin.svg?branch=main)
+This is **not** an official AWS guide. Instead it is just a sample app created by individual @wlee221 to help GitHub issue [#2314](https://github.com/aws-amplify/amplify-ui/issues/2314). 
 
-![Dashboard Screenshot](./img/dashboard.png)
+## Getting Started
+You need to init Amplify on this repo in order to run this repo:
+
+```bash
+amplify init
+```
 
 ## License
 

@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticatorService } from '@aws-amplify/ui-angular';
 
 @Component({
   selector: 'app-top-nav',
@@ -9,7 +10,10 @@ import { Router } from '@angular/router';
 export class TopNavComponent implements OnInit {
   @Output() sideNavToggled = new EventEmitter<void>();
 
-  constructor(private readonly router: Router) {}
+  constructor(
+    private readonly router: Router,
+    private authenticator: AuthenticatorService
+  ) {}
 
   ngOnInit() {}
 
@@ -18,7 +22,8 @@ export class TopNavComponent implements OnInit {
   }
 
   onLoggedout() {
-    localStorage.removeItem('isLoggedin');
+    this.authenticator.signOut(); // alternatively, you can use Auth.signOut()
+    console.debug('[top-nav.component] signing out...')
     this.router.navigate(['/login']);
   }
 }

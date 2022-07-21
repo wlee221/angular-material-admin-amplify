@@ -1,0 +1,12 @@
+@use "@angular/material" as mat;
+@import "~@aws-amplify/ui-angular/theme.css";
+
+@import "theme";
+@import "variables";
+
+:root {
+  // you can add more here: https://ui.docs.amplify.aws/angular/theming#variables
+  --amplify-colors-brand-primary-70: #{mat.get-color-from-palette($primary, 700)};
+  --amplify-colors-brand-primary-80: #{mat.get-color-from-palette($primary, 800)};
+  --amplify-colors-brand-primary-90: #{mat.get-color-from-palette($primary, 900)};
+}

@@ -7,6 +7,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 
+import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
+
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login/login.component';
 
@@ -18,7 +20,8 @@ import { LoginComponent } from './login/login.component';
     MatInputModule,
     MatCheckboxModule,
     MatButtonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    AmplifyAuthenticatorModule
   ],
   declarations: [LoginComponent]
 })
