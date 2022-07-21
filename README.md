@@ -1,6 +1,4 @@
-# Angular Material Admin
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I63W4OK)
+# Angular Material Admin Amplify
 
 This is a fork of [changhuixu/angular-material-admin](https://github.com/changhuixu/angular-material-admin) to demonstrate how to set up Authenticator with custom route guards. 
 
@@ -16,5 +14,3 @@ amplify init
 ## License
 
 Feel free to use the code in this repository as it is under MIT license.
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I63W4OK)
